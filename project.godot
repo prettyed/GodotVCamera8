@@ -1,0 +1,119 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "TransformModifier",
+"class": "BackForthMovement",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/back_forth_movement.gd"
+}, {
+"base": "TransformModifier",
+"class": "Follow",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/follow.gd"
+}, {
+"base": "TransformModifier",
+"class": "LookAt",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/look_at.gd"
+}, {
+"base": "TransformModifier",
+"class": "LookAtGroup",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/look_at_group.gd"
+}, {
+"base": "UserInput",
+"class": "Orbiter",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/user_input/orbiter.gd"
+}, {
+"base": "Spatial",
+"class": "Shake",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/shake.gd"
+}, {
+"base": "TransformModifier",
+"class": "SnapToPath",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/snap_to_path.gd"
+}, {
+"base": "Spatial",
+"class": "TransformModifier",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/transform_modifier.gd"
+}, {
+"base": "TransformModifier",
+"class": "UniformMovement",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/uniform_movement/uniform_movement.gd"
+}, {
+"base": "UniformMovement",
+"class": "UniformRotation",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/uniform_movement/uniform_rotation.gd"
+}, {
+"base": "UniformMovement",
+"class": "UniformTranslation",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/uniform_movement/uniform_translation.gd"
+}, {
+"base": "TransformModifier",
+"class": "UserInput",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/transform_modifiers/user_input/user_input.gd"
+}, {
+"base": "Spatial",
+"class": "VCamera",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/vcameras/vcamera.gd"
+}, {
+"base": "Camera",
+"class": "VCameraBrain",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/vcamera_brain.gd"
+}, {
+"base": "Node",
+"class": "VCameraTriggerAction",
+"language": "GDScript",
+"path": "res://addons/virtualcamera/vcameras/vcamera_trigger_action.gd"
+} ]
+_global_script_class_icons={
+"BackForthMovement": "",
+"Follow": "",
+"LookAt": "",
+"LookAtGroup": "",
+"Orbiter": "",
+"Shake": "",
+"SnapToPath": "",
+"TransformModifier": "res://addons/virtualcamera/transform_modifiers/transform_modifier.svg",
+"UniformMovement": "",
+"UniformRotation": "",
+"UniformTranslation": "",
+"UserInput": "",
+"VCamera": "res://addons/virtualcamera/vcameras/vcamera.svg",
+"VCameraBrain": "res://addons/virtualcamera/vcamera_brain.gd",
+"VCameraTriggerAction": ""
+}
+
+[application]
+
+config/name="GodotVCamera"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
